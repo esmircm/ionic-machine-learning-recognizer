@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-navbar color="secondary">
+    <ion-title>
+      Digit Recognizer
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  
+  <!-- <ion-input [(ngModel)]="InputTaken"></ion-input>
+  <button ion-button (click)="linearModelPredict(InputTaken)">Predict</button>
+
+  <h1>The predicted value is {{prediction}}</h1> -->
+
+<div *ngIf="model" class="container">
+  <div class="row justify-content-center">
+    <div class="col-sm">
+      <h3>Draw Here</h3>
+        <div class="wrapper">
+            <canvas drawable (newImage)="predict($event)" ></canvas><br>
+        </div>
+
+        <button ion-button class="btn btn-sm btn-warning" (click)="eraseButton()">Erase</button>
+
+    </div>
+    <div class="col-sm">
+        <h3>TensorFlow Prediction</h3>
+        <chart [data]="prediction"></chart>
+    </div>
+  </div>
+</div>
+
+<hr>
+
+<h5 color="red">*IF ON A SLOW CONNECTION, WAIT!!!</h5>
+
+
+
+</ion-content>
+

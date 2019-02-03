@@ -1,0 +1,98 @@
+[
+  {
+    "request": {
+      "url": "^/tensor$",
+      "method": "GET"
+    },
+    "response": {
+      "headers": {
+        "nextaccesstoken": "somethingElse",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Expose-Headers": "nextaccesstoken"
+      },
+      "status": 200,
+      "latency": 200,
+      "file": "tensor/model.json"
+    }
+  },
+  {
+    "request": {
+      "url": "^/group1-shard1of1$",
+      "method": "GET"
+    },
+    "response": {
+      "headers": {
+        "nextaccesstoken": "somethingElse",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Expose-Headers": "nextaccesstoken"
+      },
+      "status": 200,
+      "latency": 200,
+      "file": "tensor/group1-shard1of1"
+    }
+  },
+  {
+    "request": {
+      "url": "^/group2-shard1of1$",
+      "method": "GET"
+    },
+    "response": {
+      "headers": {
+        "nextaccesstoken": "somethingElse",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Expose-Headers": "nextaccesstoken"
+      },
+      "status": 200,
+      "latency": 200,
+      "file": "tensor/group2-shard1of1"
+    }
+  },
+  {
+    "request": {
+      "url": "^/group3-shard1of2$",
+      "method": "GET"
+    },
+    "response": {
+      "headers": {
+        "nextaccesstoken": "somethingElse",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Expose-Headers": "nextaccesstoken"
+      },
+      "status": 200,
+      "latency": 200,
+      "file": "tensor/group3-shard1of2"
+    }
+  },
+  {
+    "request": {
+      "url": "^/group3-shard2of2$",
+      "method": "GET"
+    },
+    "response": {
+      "headers": {
+        "nextaccesstoken": "somethingElse",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Expose-Headers": "nextaccesstoken"
+      },
+      "status": 200,
+      "latency": 200,
+      "file": "tensor/group3-shard2of2"
+    }
+  },
+  {
+    "request": {
+      "url": "^/group4-shard1of1$",
+      "method": "GET"
+    },
+    "response": {
+      "headers": {
+        "nextaccesstoken": "somethingElse",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Expose-Headers": "nextaccesstoken"
+      },
+      "status": 200,
+      "latency": 200,
+      "file": "tensor/group4-shard1of1"
+    }
+  }
+]
